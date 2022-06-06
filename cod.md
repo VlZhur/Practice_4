@@ -1,9 +1,8 @@
 # Practice_4
 
 #python
+
 import datetime
-
-
 a, b, c = 0, 3, 3
 start = datetime.datetime.now()
 for i in range(100000000):
@@ -12,6 +11,7 @@ end = datetime.datetime.now()
 print(f'a = {a}, {(end-start).microseconds * 1000} ms, {((end-start).microseconds * 1000)/100000000} speed iteration/ms')
 
 #java
+
 public class Main
 {
 	public static void main(String[] args) {
@@ -21,12 +21,12 @@ public class Main
             		a += b*2 + c - i;
 		}
 		end = System.currentTimeMillis();
-		System.out.println(a + " = a, " + (end-start) + " ms, " + (end-start)/100000000 + "speed iteration/ms" );
-		
+		System.out.println(a + " = a, " + (end-start) + " ms, " + (end-start)/100000000 + "speed iteration/ms" );		
 	}
 }
 
 #asm
+
 extern  _printDec
 extern  _println
         
